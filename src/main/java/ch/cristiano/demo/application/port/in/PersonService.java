@@ -10,6 +10,8 @@ public interface PersonService {
 
     public Person readPersonById(Long id);
 
+    public Person readPersonByIdString(String id);
+
     public List<Person> readAllPersons();
 
     public void update(Person person);

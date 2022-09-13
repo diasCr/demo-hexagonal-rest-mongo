@@ -26,6 +26,11 @@ public class DefaultPersonService implements PersonService {
     }
 
     @Override
+    public Person readPersonByIdString(String id) {
+        return personDao.findByIdString(id);
+    }
+
+    @Override
     public List<Person> readAllPersons() {
         // TODO Auto-generated method stub
         return null;
@@ -40,4 +45,5 @@ public class DefaultPersonService implements PersonService {
     public void delete(Long id) {
         // TODO Auto-generated method stub
     }
+
 }
